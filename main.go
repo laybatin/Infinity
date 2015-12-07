@@ -3,11 +3,8 @@ package main
 
 import (
 	"fmt"
-	//"bytes"
 	"strconv"
 	"strings"
-	"sort"
-	"sync"
 )
 
 /*
@@ -373,18 +370,6 @@ func PrintData(printValue *bigInteger) {
 	}
 }
 
-
-func QuickSort(s sort.Interface) {
-	wg := &sync.WaitGroup{}
-	wg.Add(1)
-	go quicksort(s, 0, s.Len()-1, wg)
-	
-}
-
-func quicksort(s sort.Interface, from int, to int, done *sync.WaitGroup) {
-	
-}
-
 func main() {
 	var xValue, yValue, zValue string
 	var bigArr []bigInteger
@@ -420,5 +405,4 @@ func main() {
 	bigArr = append(bigArr, *num2)
 	bigArr = append(bigArr, *num3)
 	
-	sort.Sort()
 }
